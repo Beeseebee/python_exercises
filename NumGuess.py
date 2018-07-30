@@ -1,0 +1,21 @@
+# -*- coding: cp1250 -*-
+import random
+sekret = random.randint(1, 99)
+propozycja = 0
+proba = 0
+print "Ahoj! Jam jest pirat Robert Straszliwy i mam dla Ciebie zagadkê!"
+print "Jest ni¹ tajemna liczba od 1 do 99. Na odgadniêcie jej masz 6 prób."
+while propozycja != sekret and proba < 6:
+    propozycja = input("Jaka to liczba?")
+    if propozycja < sekret:
+        print "Za ma³a, psubracie!"
+    elif propozycja > sekret:
+        print "Za du¿a, szczurze l¹dowy!"
+
+    proba = proba + 1
+
+if propozycja == sekret:
+    print "Stop! Uda³o Ci siê! Odgad³eœ moj¹ tajemn¹ liczbê!"
+else:
+    print "Wykorzysta³eœ wszystkie próby! Powodzenia nastêpnym razem, kole¿ko!"
+    print "Tajemna licza to", sekret
