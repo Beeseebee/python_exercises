@@ -1,10 +1,11 @@
+# -*- coding: utf-8 -*-
 print "Podaj wymiary pokoju"
-dlugosc = float(raw_input("D≥ugoúÊ pokoju w cm: "))
-szerokosc = float(raw_input("SzerokoúÊ pokoju w cm: "))
-koszt_metra_kw = float(raw_input("Koszt metra kwadratowego w z≥: "))
+dlugosc = float(raw_input("D≈Çugo≈õƒá pokoju w cm: "))
+szerokosc = float(raw_input("Szeroko≈õƒá pokoju w cm: "))
+koszt_metra_kw = float(raw_input("Koszt metra kwadratowego w z≈Ç: "))
 pole_cm = dlugosc * szerokosc
 pole_m = pole_cm / 10000.0
 koszt_m = pole_m * koszt_metra_kw
-print "Potrzebujesz ", pole_cm, " centymetrÛw kwadratowych wyk≥adziny, czyli ", pole_m, "metrÛw kwadratowych wyk≥adziny."
-print "Ca≥kowity koszt wyk≥adziny to ", koszt_m, "z≥"
+print "Potrzebujesz ", pole_cm, " centymetr√≥w kwadratowych wyk≈Çadziny, czyli ", pole_m, "metr√≥w kwadratowych wyk≈Çadziny."
+print "Ca≈Çkowity koszt wyk≈Çadziny to ", koszt_m, "z≈Ç"
 
